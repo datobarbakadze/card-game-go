@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	deck := createDeck()
+	cards := createDeck()
 
-	deck.print()
+	hand, _ := deal(cards, 3)
+	hand.saveToFile("myObject")
 }
